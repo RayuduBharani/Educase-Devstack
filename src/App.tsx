@@ -8,13 +8,15 @@ import Home from './pages/home'
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Welcome />} />
-      <Route path="/signup" element={<SignUp />} />
-      <Route path='/login' element={<Login />} />
-      <Route path="/home" element={<Home />} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
+    <div className="w-full h-dvh">
+      <Routes>
+        <Route path="/" element={<Welcome />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path='/login' element={<Login />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </div>
   )
 }
 
